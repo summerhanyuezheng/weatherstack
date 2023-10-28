@@ -1,0 +1,1023 @@
+@font-face {
+  font-family: Kalam;
+  src: url(./Font/Kalam/Kalam-Regular.ttf) format("woff2"), url(./Font/Kalam/Kalam-Regular.ttf) format("woff"), url(./Font/Kalam/Kalam-Regular.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+}
+
+.center {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.first-box-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.first-box {
+  width: 100%;
+  height: 614px;
+  background: url(https://weatherstack.com/site_images/mountains.svg), linear-gradient(135deg, #1f4e69 0, #164058 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-container {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.logo-container {
+  width: 1000px;
+}
+
+/* Rest of your CSS styles remain the same */
+
+.nav-bar {
+  /* width: 100%; */
+  margin: 0 auto;
+  width: 1170px;
+  height: 70px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  /* line-height: 150px; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.weatherstack-logo {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 20px;
+  /* margin-right: 200px; */
+  width: 202px;
+  height: 28px;
+}
+
+.nav-items {
+  color: white;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 30px;
+  font-size: 13px;
+  margin-top: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.status::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: rgba(70, 208, 70, 0.893);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.Login {
+  background-color: rgba(227, 218, 218, 0.2);
+  display: inline-block;
+  width: 60px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.SignUp {
+  background-color: #f47b21;
+  display: inline-block;
+  width: 105px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.left {
+  margin-top: 100px;
+  /* margin-left: 200px; */
+  /* width: 1000px; */
+  font-family: Helvetica, Arial, sans-serif;
+  float: left;
+}
+
+.left h2 {
+  font-size: 32px;
+}
+
+.left h4 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.left h2:last-of-type {
+  margin-bottom: 10px;
+}
+
+.left h4:last-of-type {
+  margin-bottom: 17px;
+}
+
+.right {
+  height: 300px;
+  width: 500px;
+  border-radius: 10px;
+  border: 4px solid #608094;
+  background: #16394c;
+  float: right;
+  margin-top: 100px;
+  color: #fff;
+  font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+  text-align: center;
+}
+
+.rspan {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.middle .ml {
+  position: relative;
+  width: 140px;
+  height: 137px;
+}
+
+.middle .ml .pic {
+  width: 140px;
+  height: 137px;
+  background: url(https://weatherstack.com/site_images/weather_icon_partly_cloudy.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -13px right 0px;
+  position: absolute;
+  left: 10px;
+}
+
+.middle .ml .cloudy {
+  width: 100px;
+  height: 19px;
+  position: absolute;
+  top: 95px;
+  left: 22px;
+  font-weight: 400;
+  /* .mm,
+.ml,
+.mr {
+    float: left;
+    margin: 20px;
+} */
+}
+
+.middle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.middle .mm {
+  margin-top: 40px;
+}
+
+.middle .mr {
+  margin-top: 40px;
+}
+
+.middle .mr span {
+  display: block;
+  line-height: 1.4;
+}
+
+.bottom {
+  margin-left: 25px;
+  margin-top: 18px;
+}
+
+.bottom .day {
+  width: 95px;
+  height: 107px;
+  font-size: 12px;
+  float: left;
+}
+
+.bottom .day span {
+  float: left;
+  margin-left: 20px;
+}
+
+.bottom .day .temperature {
+  margin-bottom: 40px;
+}
+
+.bottom .day i {
+  float: left;
+  width: 80px;
+  height: 55px;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
+.bottom .day .cloudy {
+  background: url(https://weatherstack.com/site_images/weather_icon_partly_cloudy.svg);
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+.bottom .day .sun {
+  background: url(https://weatherstack.com/site_images/weather_icon_full_sun.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 60px;
+}
+
+.worldwide::before {
+  content: "";
+  background-image: url(./icons/trust.png);
+  display: inline-block;
+  height: 35px;
+  width: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 3px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-left: 15px;
+}
+
+.worldwide {
+  display: block;
+  font-size: 17px;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+  background-color: rgba(227, 218, 218, 0.2);
+  width: 400px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 9px;
+  border-radius: 30px;
+}
+
+.API {
+  color: aliceblue;
+  margin-top: 40px;
+  font-size: 14px;
+  background-color: #f47b21;
+  width: 230px;
+  height: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: #f47b21;
+  box-shadow: none;
+}
+
+.free {
+  margin-left: 20px;
+  font-size: 19px;
+  font-family: "Kalam", cursive;
+}
+
+/* why didn't this work? */
+
+/* 想一次性把所有图片都调小 */
+
+/* .customers-container li img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+} */
+
+.second-box {
+  width: 100%;
+  height: 84px;
+  background-color: #ebeff4;
+  padding: 40px 0 12px;
+}
+
+/* .second-box>ul{
+  height: 840px;
+} */
+
+.second-box ul li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 本来想用以下两种方式选择在customers-container 里的li,但是没起作用 */
+
+/* li[customers-container] {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+} */
+
+/* .customers-container li {
+  list-style: none;
+  display: inline-block;
+} */
+
+.second-box li {
+  line-height: 50px;
+}
+
+.li-img {
+  display: inline-block;
+  /* width: 187px; */
+  height: 50px;
+  /* object-fit: contain; */
+  /* margin-left: 30px; */
+  /* why didn'd vertical align work? */
+  /* 想把图片都垂直居中，没起作用 */
+  /* 最后一个个margin调的 */
+  vertical-align: middle;
+}
+
+.happy-customers {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+  margin-right: 60px;
+}
+
+.deloitte {
+  width: 125px;
+}
+
+.microsoft {
+  width: 135px;
+  padding-left: 50px;
+}
+
+.warner {
+  padding-left: 50px;
+}
+
+.wawa {
+  width: 90px;
+  position: relative;
+  bottom: 8px;
+  padding-left: 50px;
+}
+
+.schneider {
+  width: 120px;
+  height: 40px;
+  position: relative;
+  top: 8px;
+  padding-left: 50px;
+}
+
+.ericsson {
+  width: 130px;
+  position: relative;
+  top: 5px;
+  padding-left: 10px;
+}
+
+.third-box {
+  width: 100%;
+  height: 247px;
+  margin: 80px auto;
+}
+
+.third-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.third-container {
+  margin: 0 auto;
+  width: 1140px;
+  background-color: #ebeff4;
+  border-radius: 5px;
+}
+
+.box {
+  width: 250px;
+  height: 210px;
+  background-color: #dee3e9;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.box h5 {
+  font-size: 15px;
+  font-weight: 400px;
+  margin-top: 10px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.box p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 20px;
+}
+
+.real-time::before {
+  content: "";
+  background-image: url(./icons/realTime.png);
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.locations::before {
+  content: "";
+  background-image: url(./icons/locationtion.png);
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.speed::before {
+  content: "";
+  background-image: url(./icons/speed.png);
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.upgrade::before {
+  content: "";
+  background-image: url(./icons/tag.png);
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.forth-box {
+  width: 100%;
+  height: 347px;
+  margin-bottom: 65px;
+}
+
+.forth-container {
+  width: 1170px;
+  height: 347px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+.forth-left {
+  width: 439px;
+  height: 333;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.forth-left h4 {
+  font-size: 25px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  margin-bottom: 40px;
+  line-height: normal;
+}
+
+.forth-left p {
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.forth-left > ul > li {
+  display: block;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 5px;
+  /* padding-left: 80px; */
+}
+
+.realTime::before {
+  content: "";
+  background-image: url(./icons/realTime.png);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.historical::before {
+  content: "";
+  background-image: url(./icons/history.png);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.forecast::before {
+  content: "";
+  background-image: url(./icons/forcast.png);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.location::before {
+  content: "";
+  background-image: url(./icons/location.png);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.bulk::before {
+  content: "";
+  background-image: url(./icons/bulk.png);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.forth-right {
+  float: left;
+  margin-left: 20px;
+}
+
+.fifth-box {
+  width: 100%;
+  height: 1365px;
+  background: #184157 url(https://weatherstack.com/site_images/bg_waves_4.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding-bottom: 40px;
+}
+
+.fifth-box-container {
+  width: 1170px;
+  height: 1346px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.fifth-box h4 {
+  text-align: center;
+  background-color: rgba(227, 218, 218, 0.2);
+  width: 100px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 50px;
+  margin: 70px auto;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fifth-box p {
+  font-size: 20px;
+  line-height: normal;
+  margin: 30px auto;
+  text-align: center;
+  line-height: normal;
+}
+
+.fifth-box p:first-of-type {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.fifth-box-container p:last-of-type {
+  font-weight: 200;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fifth-box-container ul {
+  margin-top: 20px;
+  margin: 0 auto;
+  width: 656px;
+  height: 55px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 10px;
+  list-style: none;
+  text-align: center;
+  line-height: 55px;
+  overflow: hidden;
+}
+
+.fifth-box-container ul li {
+  list-style: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.results {
+  color: white;
+  width: 656px;
+  height: 719px;
+  background-color: #17242b;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.more {
+  height: 204px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.more span {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.more p {
+  font-size: 14px;
+  text-align: left;
+  padding: 10px 20px 15px 20px;
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+.mbox {
+  max-width: 330px;
+  height: 103px;
+  margin: 10px;
+  padding: 14px 20px 15px 20px;
+  background-color: rgba(227, 218, 218, 0.2);
+  border-radius: 10px;
+}
+
+.data::before {
+  content: "";
+  background-image: url(./icons/data.png);
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.fastResponse::before {
+  content: "";
+  background-image: url(./icons/fastResponse.png);
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.green {
+  color: rgb(142, 226, 63);
+}
+
+.scalable::before {
+  content: "";
+  background-image: url(./icons/scale.png);
+  display: inline-block;
+  height: 43px;
+  width: 43px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.mbox .scale {
+  padding-top: 0px;
+}
+
+.lookup::before {
+  content: "";
+  background-image: url(./icons/lookup.png);
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.security::before {
+  content: "";
+  background-image: url(./icons/security.png);
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.extensive::before {
+  content: "";
+  background-image: url(./icons/extend.png);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.sixth-box {
+  width: 100%;
+  height: 380px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.sixth-container {
+  width: 1170px;
+  height: 379px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+
+.sixth-container h4 {
+  font-size: 25px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.sixth-container h5 {
+  font-size: 20px;
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: 500;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.sixth-container ul li {
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+  background: gray;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.sixth-container ul li.Dai {
+  background: #263e6a url(https://weatherstack.com/site_images/client_white_daimler.svg);
+  background-size: 175px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sixth-container ul li.Del {
+  background: #eef2f5 url(https://weatherstack.com/site_images/client_deloitte.svg);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sixth-container ul li.Eri {
+  background: #01275b url(https://weatherstack.com/site_images/client_white_ericsson_2.svg);
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 135px;
+}
+
+.sixth-container ul li.micro {
+  background: #eef2f5 url(https://weatherstack.com/site_images/client_microsoft.svg);
+  background-size: 175px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sixth-container ul li.sch {
+  background: #009e4d url(https://weatherstack.com/site_images/client_white_schneider.svg);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  margin-right: 0;
+}
+
+.sixth-container ul li.wb {
+  background: #027ac2 url(https://weatherstack.com/site_images/client_white_warnerbros.svg);
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 190px;
+}
+
+.sixth-container ul li.wa {
+  background: #ee2e25 url(https://weatherstack.com/site_images/client_white_wawa.svg);
+  background-size: 110px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sixth-container ul li.ca {
+  background: #eef2f5 url(https://weatherstack.com/site_images/client_canda.svg);
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 135px;
+}
+
+.sixth-container ul li.mc {
+  background: #23477f url(https://weatherstack.com/site_images/client_mckinsey.svg);
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 10px;
+  width: 260px;
+}
+
+.sixth-container ul li.rim {
+  background: #eef2f5 url(https://weatherstack.com/site_images/client_rimowa.svg);
+  background-size: 155px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0;
+}
+
+.sixth-container ul {
+  margin-top: 40px;
+}
+
+.seventh-box {
+  width: 100%;
+  height: 115px;
+  background: #eef2f5;
+  padding: 25px 25px;
+  box-sizing: border-box;
+}
+
+.seventh-container {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seventh-container span {
+  font-size: 17px;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+}
+
+.seventh-container button {
+  background: #f47b21;
+  padding: 17px 15px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 3px;
+  border-color: transparent;
+  margin-left: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 312px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #184157;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  width: 308px;
+  display: inline-block;
+  float: left;
+}
+
+.social-links {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-links div a img {
+  margin-right: 10px;
+}
+
+footer ul {
+  width: 196px;
+  list-style: none;
+  display: inline-block;
+  float: left;
+  font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+  font-weight: 300;
+}
+
+footer ul li {
+  line-height: 30px;
+}
+
+footer ul li.heading {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+footer .last {
+  clear: both;
+  padding-top: 70px;
+  font-weight: 300;
+  font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+}
+
+footer .last p {
+  text-align: center;
+}
+
+footer .last p:last-child {
+  margin-top: 15px;
+}

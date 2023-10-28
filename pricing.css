@@ -1,0 +1,1027 @@
+@font-face {
+  font-family: promo;
+  src: url(./Font/promo-font-family-1692215619-0/PromoTest-Regular-BF63b7880272a33.otf);
+  font-family: corbel;
+  src: url(./Font/corbel/CORBEL.TTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  font-family: promo, Helvetica, Arial, sans-serif;
+  /* 大部分字体 */
+}
+
+.corbel {
+  font-family: "Open Sans", "Gill Sans MT", "Gill Sans", corbel;
+  /* 局部字体，heading，nav等 */
+}
+
+.center {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.first {
+  width: 100%;
+  height: 440px;
+  background: url(https://weatherstack.com/site_images/mountains.svg), linear-gradient(135deg, #1f4e69 0, #164058 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.nav-container {
+  width: 1170px;
+  height: 71px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.first .nav-container ul li a {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.first .nav-container ul li {
+  float: left;
+  margin: 17px;
+  margin-top: 15px;
+}
+
+.first .nav-container ul {
+  float: right;
+  list-style: none;
+}
+
+.first .nav-container a img {
+  float: left;
+  margin-top: 12px;
+}
+
+.status::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgba(70, 208, 70, 0.893);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.login {
+  background-color: rgba(227, 218, 218, 0.2);
+  width: 60px;
+  height: 36px;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+.signup {
+  background-color: #f47b21;
+  width: 105px;
+  height: 36px;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+.price-container {
+  width: 1170px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 20px;
+}
+
+.price-container h2 {
+  position: absolute;
+  top: 8px;
+  padding-left: 395px;
+  font-size: 32px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.price-container div {
+  position: absolute;
+  bottom: -30px;
+  font-size: 13px;
+  background: #15394c;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-left: 470px;
+}
+
+.price-container div input {
+  margin: 2px;
+}
+
+.second {
+  width: 100%;
+  height: 697px;
+  padding-top: 40px;
+}
+
+.col {
+  color: #16222f;
+  position: relative;
+  bottom: 140px;
+  /* 除了使用relative,还有其他方法嘛 */
+}
+
+.top {
+  width: 211px;
+  height: 312px;
+  background: #ebeff4;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.top p {
+  font-size: 12px;
+}
+
+.bottom {
+  font-size: 14px;
+  list-style: none;
+  padding-left: 15px;
+  width: 217px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.bottom li {
+  margin: 15px 0px;
+}
+
+.call::before {
+  content: "";
+  background-image: url(./icons/second/calls.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+  /* padding: 5px 5px; */
+}
+
+.enterprise .call::before {
+  content: "";
+  background-image: url(./icons/enterprise/calls.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+  /* padding: 5px 5px; */
+}
+
+.money::before {
+  content: "";
+  background-image: url(./icons/second/each.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.LocationLookup::before {
+  content: "";
+  background-image: url(./icons/second/location.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.enterprise .LocationLookup::before {
+  content: "";
+  background-image: url(./icons/enterprise/location.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.https::before {
+  content: "";
+  background-image: url(./icons/second/http.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.enterprise .https::before {
+  content: "";
+  background-image: url(./icons/enterprise/http.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.Astronomy::before {
+  content: "";
+  background-image: url(./icons/second/astro.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.enterprise .Astronomy::before {
+  content: "";
+  background-image: url(./icons/enterprise/astro.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.hourbyhour::before {
+  content: "";
+  background-image: url(./icons/second/hour.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.enterprise .hourbyhour::before {
+  content: "";
+  background-image: url(./icons/enterprise/hour.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.FullHistorical::before {
+  content: "";
+  background-image: url(./icons/second/history.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.enterprise .FullHistorical::before {
+  content: "";
+  background-image: url(./icons/enterprise/history.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.dayForecast::before {
+  content: "";
+  background-image: url(./icons/second/forcast.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.enterprise .dayForecast::before {
+  content: "";
+  background-image: url(./icons/enterprise/forcast.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.BulkQueries::before {
+  content: "";
+  background-image: url(./icons/second/bulk.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.Languages::before {
+  content: "";
+  background-image: url(./icons/second/language.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.enterprise .Languages::before {
+  content: "";
+  background-image: url(./icons/enterprise/language.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.enterprise .custom::before {
+  content: "";
+  background-image: url(./icons/enterprise/custom.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.support::before {
+  content: "";
+  background-image: url(./icons/second/support.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+  /* padding: 5px 5px; */
+}
+
+.RealTimeWeather::before {
+  content: "";
+  background-image: url(./icons/second/realtime.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+  /* padding: 5px 5px; */
+}
+
+.enterprise .RealTimeWeather::before {
+  content: "";
+  background-image: url(./icons/enterprise/realtime.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+  /* padding: 5px 5px; */
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+  /* Optional: Reduce font size for better appearance */
+}
+
+.second-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bold-money {
+  font-size: 20px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.top > span:last-child {
+  font-size: 14px;
+  color: #848484;
+  background: #dde1e7;
+  padding: 10px 10px;
+  border-radius: 3px;
+  width: 80%;
+  display: inline-block;
+}
+
+.top .heading {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: corbel;
+}
+
+.first-p {
+  padding: 15px 15px;
+  box-sizing: border-box;
+  height: 70px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.second-p {
+  margin-top: 35px;
+  box-sizing: border-box;
+}
+
+.top .small {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 33px;
+  display: block;
+}
+
+.free::before {
+  content: "";
+  background-image: url(./icons/fiveBox/free.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.standard::before {
+  content: "";
+  background-image: url(./icons/fiveBox/standard.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.professional::before {
+  content: "";
+  background-image: url(./icons/fiveBox/professional.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.business::before {
+  content: "";
+  background-image: url(./icons/fiveBox/business.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.Enterprise::before {
+  content: "";
+  background-image: url(./icons/fiveBox/enterprise.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.third {
+  width: 100%;
+  height: 112px;
+}
+
+.third-container {
+  width: 1140px;
+  height: 85px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.lastcol {
+  color: #fff;
+  background: #15394c;
+  border-radius: 5px;
+}
+
+section.third ul li:nth-child(1) {
+  font-weight: 500;
+  font-size: 15px;
+  top: -17px;
+  text-align: left;
+  color: black;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.third-container li {
+  width: 187px;
+  height: 50px;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  /* 这是啥用法？ */
+  /* 子元素没加absolute */
+}
+
+.third-container .deloitte {
+  background: url(https://weatherstack.com/site_images/client_deloitte.svg);
+  background-size: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.third-container .microsoft {
+  background: url(https://weatherstack.com/site_images/client_microsoft.svg);
+  background-size: 135px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.third-container .warnbros {
+  background: url(https://weatherstack.com/site_images/client_warnerbros.svg);
+  background-size: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 110px;
+}
+
+.third-container .wawa {
+  background: url(https://weatherstack.com/site_images/client_wawa.svg);
+  background-size: 85px;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -4px;
+  left: 4px;
+  width: 132px;
+}
+
+.third-container .schneider {
+  background: url(https://weatherstack.com/site_images/client_schneider.svg);
+  background-size: 125px;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 4px;
+}
+
+.third-container .ericsson {
+  background: url(https://weatherstack.com/site_images/client_ericsson_2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 112px;
+  top: -1px;
+}
+
+.forth {
+  width: 100%;
+  height: 1342px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: #f0f3f6;
+  color: black;
+}
+
+.forth-container {
+  width: 1170px;
+  height: 1342px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.forth-container h4 {
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.forth-container .img {
+  background: url(https://weatherstack.com/site_images/world_map_vector_objects.svg);
+  height: 200px;
+  width: 1000px;
+  background-size: cover;
+  margin-left: 100px;
+  margin-bottom: 35px;
+}
+
+.forth-container .row {
+  max-width: 1200px;
+  height: 82.5px;
+  padding-bottom: 25px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.row .left {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.row .left p {
+  max-width: 500px;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.row .left .heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.row .right {
+  float: right;
+  width: 240px;
+  height: 82px;
+  border-left: 2px dashed #ccd0d3e8;
+  padding-left: 35px;
+  padding-top: 12px;
+}
+
+.row .right span:first-of-type {
+  background: #416376;
+  width: 80px;
+  color: #fff;
+  padding: 4px 4px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+
+.forth-container .real-time {
+  border-top: 2px dashed #ccd0d3e8;
+  padding-top: 50px !important;
+}
+
+.real-time::before {
+  content: "";
+  background-image: url(./icons/pricing/real.png);
+  display: inline-block;
+  height: 78px;
+  width: 75px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-right: 45px;
+}
+
+.location::before {
+  content: "";
+  background-image: url(./icons/pricing/location.png);
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-right: 45px;
+}
+
+.lunar::before {
+  content: "";
+  background-image: url(./icons/pricing/lunar.png);
+  display: inline-block;
+  height: 78px;
+  width: 78px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-right: 45px;
+}
+
+.hour::before {
+  content: "";
+  background-image: url(./icons/pricing/hour.png);
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-right: 45px;
+}
+
+.history::before {
+  content: "";
+  background-image: url(./icons/pricing/history.png);
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-right: 45px;
+}
+
+.weather::before {
+  content: "";
+  background-image: url(./icons/pricing/weather.png);
+  display: inline-block;
+  height: 78px;
+  width: 76px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-right: 45px;
+}
+
+.multi::before {
+  content: "";
+  background-image: url(./icons/pricing/multi.png);
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-right: 45px;
+}
+
+.bulk::before {
+  content: "";
+  background-image: url(./icons/pricing/bulk.png);
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-right: 45px;
+}
+
+.fifth {
+  width: 100%;
+  height: 594px;
+}
+
+.fifth-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.fifth-container h2 {
+  font-size: 25px;
+  color: #16222f;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.f-left {
+  padding-left: 20px;
+}
+
+.f-right {
+  padding-right: 15px;
+}
+
+.f-left,
+.f-right {
+  width: 520px;
+  color: #16222f;
+}
+
+.fifth-container h3 {
+  color: #949494;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.collapsible {
+  background: #fff;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  border-bottom: 1px solid #dedee1;
+  color: #16222f;
+  font-family: corbel;
+}
+
+.content {
+  padding: 20px 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #ebeff4;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.collapsible:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #aaadb1;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.c2 h3 {
+  margin-top: 20px;
+}
+
+.fifth-container a {
+  text-decoration: underline;
+  color: #2e67a8;
+}
+
+.f-left .special-a {
+  width: 300px;
+  font-size: 14px;
+  color: #7e8e9e;
+  margin-top: 40px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.special-a::after {
+  font-size: 20px;
+  content: "\2192";
+  margin-left: 20px;
+}
+
+.seventh-box {
+  width: 100%;
+  height: 115px;
+  background: #eef2f5;
+  padding: 25px 25px;
+  box-sizing: border-box;
+}
+
+.seventh-container {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seventh-container span {
+  font-size: 17px;
+  color: black;
+}
+
+.seventh-container button {
+  background: #f47b21;
+  padding: 17px 15px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 3px;
+  border-color: transparent;
+  margin-left: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 312px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #184157;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  width: 308px;
+  display: inline-block;
+  float: left;
+}
+
+.social-links {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-links div a img {
+  margin-right: 10px;
+}
+
+footer ul {
+  width: 196px;
+  list-style: none;
+  display: inline-block;
+  float: left;
+}
+
+footer ul li {
+  line-height: 30px;
+  font-weight: 300;
+}
+
+footer ul li.heading {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+footer .last {
+  clear: both;
+  padding-top: 70px;
+  font-weight: 300;
+}
+
+footer .last p {
+  text-align: center;
+}
+
+footer .last p:last-child {
+  margin-top: 15px;
+}
